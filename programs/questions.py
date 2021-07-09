@@ -223,7 +223,12 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    list1 = list(range(1, input+1))
+    multiples = 1
+    for n in list1:
+        multiples *= n
+
+    return multiples
 
 
     # <QUESTION 9>
