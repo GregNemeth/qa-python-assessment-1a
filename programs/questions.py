@@ -43,7 +43,7 @@ def one(input1, input2):
     else:
         return sorted(list1, key=len)[1]
 
-print(one('hi', 'hello'))
+
 
     # <QUESTION 2>
 
