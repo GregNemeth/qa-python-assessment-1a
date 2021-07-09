@@ -127,7 +127,13 @@ def three(arg1):
 
 def four(arg1):
     list1 = arg1.split()
+    sums = []
+    for i in range(len(list1)):
+        sums.append(sum(int(digit) for digit in str(list1[i])))
     
+    return sorted(sums, reverse=True)[0]
+
+
 
 
 
