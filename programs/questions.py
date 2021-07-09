@@ -165,7 +165,17 @@ def four(arg1):
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-    pass
+    input = input.split(',')
+    output = []
+    try:
+        for i in range(len(input)):
+            if input[(i+2)] == 'False':
+                output.append(input[(i)])
+    except: IndexError
+    return list(set(output))
+    
+
+
 
 
     # <QUESTION 6>
