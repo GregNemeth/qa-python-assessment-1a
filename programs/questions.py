@@ -126,7 +126,11 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    list1 = arg1.split()
+    
+
+
+
 
 
     # <QUESTION 5>
@@ -194,7 +198,13 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    input = str.lower(input)
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    no_vowels = 0
+    for item in vowels:
+        no_vowels += input.count(item)
+    return no_vowels
+
 
 
     # <QUESTION 8>
